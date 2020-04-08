@@ -1,5 +1,5 @@
 <h3>
-    <a [title]="product.name + ' details'" href="{{product.link}}">
+    <a [title]="product.name + ' details'" routerLink="/categories/{{category.id}}/products/{{product.id}}">
       {{ product.name }}
     </a>
     <a routerLink="/categories/{{category.id}}/products/{{product.id}}"> <button>View Details</button></a>

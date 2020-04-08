@@ -7,7 +7,7 @@ export interface Product{
     rating:number
     category_id:number;
     id:number;
-    available: boolean;
+    available:boolean
   }
   export const PRODUCTS = [
     {
