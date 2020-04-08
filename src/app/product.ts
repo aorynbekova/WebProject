@@ -1,17 +1,12 @@
 export interface Product{
     name : string,
     price : number,
-    description : string
-    link:string,
-    img_link:string
-    rating:number
-    category_id:number;
-    id:number;
-<<<<<<< HEAD
-    available:boolean
-=======
+    description : string, 
+    img_link:string,
+    rating:number,
+    category_id:number,
+    id:number,
     available: string;
->>>>>>> 93c2dabd009ecc600cfe749d7246248dd13d358f
   }
   export const PRODUCTS = [
     {
