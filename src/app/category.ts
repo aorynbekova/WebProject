@@ -3,6 +3,7 @@ import { stripSummaryForJitNameSuffix } from '@angular/compiler/src/aot/util';
 export interface Category{
     id: number;
     name: string;
+    image: string;
 }
 
 export const CATEGORIES =[
