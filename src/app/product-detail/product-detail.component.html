@@ -9,7 +9,11 @@
 <img src="{{product.img_link}}" height="200px" width="200px"  alt="" class="img" >
 
 <div class="rating">Rating:<span class="ratingNum">{{product.rating}}</span></div>
-
+<p>Please rate our product</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <ngx-input-star-rating formControlName="rating"></ngx-input-star-rating>
+  <button>Submit</button>
+</form>
 <p *ngIf="product.description">
   Description: {{ product.description }}
 </p>
