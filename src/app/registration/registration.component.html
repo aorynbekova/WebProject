@@ -1,0 +1,17 @@
+<button (click)="goBack()" class="button"><i class="arrow left"></i>Go back</button>
+<div class="login-box">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required />
+    <label for="password">Password</label>
+    <input type="password" id="passwod" name="password"  required >
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email"  required >
+
+    <label for="firstname">Firstname</label>
+    <input type="text" id="firstname" name="firstname"  required >
+    <label for="lastname">Lastname</label>
+    <input type="text" id="lastname" name="lastname"  required >
+
+    <p>Already have a account? <a [routerLink]="['/login']" routerLinkActive="router-link-active" >Let's sign up!</a> .</p>
+    <input type="submit" name="login" onclick="" value="Registry">
+</div>
