@@ -11,6 +11,8 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgxInputStarRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
