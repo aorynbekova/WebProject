@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
@@ -19,8 +20,9 @@ import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
     CategoryDetailComponent,
     ProductsComponent,
     ProductDetailComponent,
+    TopbarComponent,
     FooterComponent,
-    TopbarComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
