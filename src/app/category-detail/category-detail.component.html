@@ -1,5 +1,7 @@
-<h2 class="categoryName">{{category.name}}</h2>
-<button (click)="goBack()" class="button"><i class="arrow left"></i>Go back</button>
+<div class="title">
+    <button (click)="goBack()" class="button"><i class="arrow left"></i>Go back</button>
+    <h2 class="categoryName">{{category.name}}</h2>
+</div>
 <div *ngFor="let product of products " class="box">
     <app-products [product]="product" [category]="category"></app-products>
 </div>

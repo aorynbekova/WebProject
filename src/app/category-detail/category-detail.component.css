@@ -7,3 +7,19 @@
     margin: 10px 10px 10px 10px;
     justify-content: center;
 }
+.title{
+    display: flex;
+    align-content: center;
+}
+button{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    height: 30px;
+    position: relative;
+}
+h2{
+    margin-left: 15px;
+    position: relative;
+    width: fit-content;
+}
