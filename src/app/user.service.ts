@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import {User, USER} from './user';
 
@@ -6,14 +7,15 @@ import {User, USER} from './user';
   providedIn: 'root'
 })
 export class UserService {
+  private _url = 'http://localhost:8000/api/user/'
+  httpHeaders = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})}
+  constructor(private http: HttpClient) { }
 
-  getUserByUsername(username: string): Observable<User>{
-    return of(USER.find(user => user.username === username));
+  Login(user: User): Observable<User> {
+    return this.http.post<User>(this._url + 'login', user, this.httpHeaders)
   }
 
-  getUsers(): Observable<User[]>{
-    return of(USER);
+  SignUp(user: User): Observable<User> {
+    return this.http.post<User>(this._url + 'register', user, this.httpHeaders)
   }
-
-  constructor() { }
 }

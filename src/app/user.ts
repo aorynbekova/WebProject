@@ -2,13 +2,13 @@
 
 export interface User {
     id: number;
-    username: string;
+    email: string;
     password: string;
     firstName: string;
     lastName: string;
     role: Role;
 }
 export const USER = [
-    { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
-    { id: 2, username: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.User }
+    { id: 1, email: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
+    { id: 2, email: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.User }
 ];

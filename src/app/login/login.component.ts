@@ -4,7 +4,7 @@ import {Location} from '@angular/common';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {User} from '../user';
 import {UserService} from '../user.service';
-import { Observable, of, from } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -12,21 +12,22 @@ import { Observable, of, from } from 'rxjs';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form: FormGroup;
-  user: User;
+  login = {
+    email: '',
+    password: ''
+  }
   
   constructor(
-    private route: ActivatedRoute,
     private userService: UserService,
     private location: Location,
-    private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
   }
 
-  submit():void{
-    
+
+  onLogin(): void {
+    this.userService.Login(this.login);
   }
 
   goBack(): void {
