@@ -4,7 +4,6 @@ import {CategoriesComponent} from './categories/categories.component';
 import {CategoryDetailComponent} from './category-detail/category-detail.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { LoginComponent } from './login/login.component';
-import { AuthGuard } from './_helpers';
 
 
 const routes: Routes = [
