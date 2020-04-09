@@ -8,6 +8,7 @@ import { CategoryDetailComponent } from './category-detail/category-detail.compo
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TopbarComponent } from './topbar/topbar.component';
     CategoryDetailComponent,
     ProductsComponent,
     ProductDetailComponent,
-    TopbarComponent
+    TopbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
