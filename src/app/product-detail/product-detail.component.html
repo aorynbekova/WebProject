@@ -24,3 +24,6 @@
 <p *ngIf="product.price">
   Available: {{ product.available }}
 </p>
+<div *ngIf="product">
+<button (click)="addToCart(product)">Buy</button>
+</div>

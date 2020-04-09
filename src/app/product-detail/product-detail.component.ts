@@ -5,6 +5,7 @@ import {Location} from '@angular/common';
 import {Product} from '../product';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import { Observable, of } from 'rxjs';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -20,9 +21,13 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private categoryService: CategoryService,
     private location: Location,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private cartService: CartService
   ) { }
-
+  addToCart(product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
   getProduct(): void {
     const id = +this.route.snapshot.paramMap.get('productId');
     this.categoryService.getProduct(id).
