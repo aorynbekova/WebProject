@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
+import { RegistrationComponent } from './registration/registration.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
     ProductDetailComponent,
     TopbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
