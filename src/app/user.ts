@@ -7,7 +7,6 @@ export interface User {
     firstName: string;
     lastName: string;
     role: Role;
-    token?: string;
 }
 export const USER = [
     { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
