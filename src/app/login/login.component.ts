@@ -26,9 +26,9 @@ export class LoginComponent implements OnInit {
   }
 
 
-  onLogin(): void {
+  /*onLogin(): void {
     this.userService.Login(this.login);
-  }
+  }*/
 
   goBack(): void {
     this.location.back();
