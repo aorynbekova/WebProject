@@ -5,6 +5,7 @@ import {CategoryService} from '../category.service';
 import {Product} from '../product';
 import { Location } from '@angular/common';
 
+
 @Component({
   selector: 'app-category-detail',
   templateUrl: './category-detail.component.html',
