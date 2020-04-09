@@ -15,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
 import { RegistrationComponent } from './registration/registration.component';
 
-import { NgpSortModule } from "ngp-sort-pipe"
+//import { NgpSortModule } from "ngp-sort-pipe"
 @NgModule({
   declarations: [
     AppComponent,
