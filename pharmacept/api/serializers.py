@@ -18,3 +18,8 @@ class ProductSerializer(serializers.Serializer):
     price = serializers.FloatField()
     rating = serializers.FloatField()
 
+class OrderSerializer(serializers.Serializer):
+    id = serializers.IntegerField(required=False)
+    phone = serializers.CharField()
+    product = ProductSerializer()
+

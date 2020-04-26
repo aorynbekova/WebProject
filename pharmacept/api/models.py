@@ -17,3 +17,6 @@ class Product(models.Model):
     price = models.FloatField()
     rating = models.FloatField()
 
+class Order(models.Model):
+    phone = models.CharField(max_length=100)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, blank=True, null=True)
