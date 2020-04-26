@@ -4,8 +4,8 @@ import {CategoriesComponent} from './categories/categories.component';
 import {CategoryDetailComponent} from './category-detail/category-detail.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { LoginComponent } from './login/login.component';
-import { RegistrationComponent} from './registration/registration.component'
-import { CartComponent } from './cart/cart.component'
+import {RegistrationComponent} from './registration/registration.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
