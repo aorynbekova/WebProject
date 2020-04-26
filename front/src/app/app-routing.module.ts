@@ -13,9 +13,11 @@ const routes: Routes = [
   { path: 'categories', component: CategoriesComponent },
   { path: 'categories/:categoryId/products', component: CategoryDetailComponent },
   { path: 'categories/:categoryId/products/:productId', component: ProductDetailComponent },
+  { path: 'cart', component: CartComponent},
+  { path: 'articles', component: ArticlesComponent},
+  { path: 'news/:id', component: NewsPageComponent },
   { path: 'login', component: LoginComponent},
   { path: 'registration', component: RegistrationComponent},
-  { path: 'cart', component: CartComponent},
   { path: '**', redirectTo: '' }
 ];
 
