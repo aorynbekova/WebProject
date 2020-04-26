@@ -14,6 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
 import { RegistrationComponent } from './registration/registration.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { NewsPageComponent } from './news-page/news-page.component';
 
 //import { NgpSortModule } from "ngp-sort-pipe"
 @NgModule({
@@ -26,7 +28,9 @@ import { RegistrationComponent } from './registration/registration.component';
     TopbarComponent,
     FooterComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ArticlesComponent,
+    NewsPageComponent
   ],
   imports: [
     BrowserModule,

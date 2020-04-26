@@ -23,10 +23,3 @@
     letter-spacing: 0.25px;
   }
 
-  @media screen and (max-width: 800px) {
-    .logo1{
-      float: none;
-      display: none;
-      visibility: hidden;
-    }
-  }
