@@ -11,12 +11,12 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
 import { RegistrationComponent } from './registration/registration.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { NewsPageComponent } from './news-page/news-page.component';
-
+import { HttpClientModule } from '@angular/common/http'
 //import { NgpSortModule } from "ngp-sort-pipe"
 @NgModule({
   declarations: [
@@ -36,7 +36,9 @@ import { NewsPageComponent } from './news-page/news-page.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgxInputStarRatingModule
+    NgxInputStarRatingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

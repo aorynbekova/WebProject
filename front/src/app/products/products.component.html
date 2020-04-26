@@ -1,6 +1,6 @@
  <div>
  <div class="box">
-    <a [title]="product.name + ' details'" routerLink="/categories/{{category.id}}/products/{{product.id}}">
+    <a [title]="product.name + ' details'" href="/products/{{product.id}}">
       <img src="{{product.img_link}}" height="200px" width="200px"  alt="" class="img" >
       <h3>{{ product.name }}</h3>
     </a>
