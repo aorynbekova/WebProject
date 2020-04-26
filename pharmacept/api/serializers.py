@@ -1,12 +1,17 @@
 from rest_framework import serializers
-from api.models import Category
+from api.models import Category, Manager
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = 'id', 'name', 'image'
+class ManagerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Manager
+        fields = 'id', 'usename'
 
 class ProductSerializer(serializers.Serializer):
+    id=serializers.IntegerField(required=False)
     name = serializers.CharField()
     description = serializers.CharField()
     link = serializers.CharField()

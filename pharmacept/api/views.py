@@ -3,8 +3,8 @@ from django.http.response import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
-from api.serializers import CategorySerializer, ProductSerializer
-from api.models import Category, Product
+from api.serializers import CategorySerializer, ProductSerializer, OrderSerializer
+from api.models import Category, Product, Order
 
 class CategoriesView(APIView):
     def get(self, request):
@@ -70,3 +70,11 @@ def product_update_delete(request):
         product = Product.objects.get(id=request.data.get('id'))
         product.delete()
 
+@api_view(['POST'])
+def order(request):
+    product = Product.objects.get(id=request.data['id'])
+    Order.objects.create(
+        product=product,
+        phone = request.data.get('phone'),
+    )
+    return  JsonResponse({'':''}, safe=False)

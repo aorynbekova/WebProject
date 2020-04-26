@@ -20,3 +20,7 @@ class Product(models.Model):
 class Order(models.Model):
     phone = models.CharField(max_length=100)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, blank=True, null=True)
+
+class Manager(models.Model):
+    username = models.TextField()
+    password = models.TextField()
